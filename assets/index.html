@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Bezier Subdivision</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <canvas id="canvas" width="800" height="800"></canvas>
+    <div class="controls">
+        <fieldset>
+            <legend>Info</legend>
+            <p>&bull; Mouse left and drag to move points</p>
+            <p>&bull; Mouse right to add/remove points</p>
+            <p>Curve segmentation controls how many segments are rendred per order. Higher count means finer rendering.</p>
+            <p></p>
+        </fieldset>
+        <fieldset>
+            <legend>Controls</legend>
+            <label for="segments">Curve segments</label>
+            <input type="number" id="segments" min="2" value="2" step="1">
+            <label for="proportion">Subdivision proportion</label>
+            <input type="range" min="1" max="100" value="50" class="slider" id="proportion">
+        </fieldset>
+        <fieldset>
+            <legend>Visibility</legend>
+            <label for="polygonEnabled">Control polygon</label>
+            <input type="checkbox" id="polygonEnabled" checked="checked">
+
+            <label for="pointsEnabled">Control points</label>
+            <input type="checkbox" id="pointsEnabled" checked="checked">
+
+            <label for="scaffoldEnabled">DeCasteljau scaffold</label>
+            <input type="checkbox" id="scaffoldEnabled" checked="checked">
+        </fieldset>
+        <fieldset>
+            <legend>Acknowledgements</legend>
+            <p>Author: <strong>Viktor Kostadinov</strong></p>
+            <p>This work is distributed under an MIT license. Code snippets for the creation of the GLWrapper class have been taken from the <a href="https://github.com/mdn/webgl-examples">MDN example repository.</a></p>
+            <p><strong>Compiling this project</strong></p>
+            <p>The source can be located inside <code>./src</code>. After installing all dev-dependencies, you can launch <code>npm run build</code> from the console to compile the project. The packed bundle will be inside <code>./dist</code>. You may have to manually copy the stylesheet.</p>
+        </fieldset>
+    </div>
+</body>
+
+</html>

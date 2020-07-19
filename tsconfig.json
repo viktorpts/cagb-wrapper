@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "es6",
+        "outDir": "./js",
+        "sourceMap": true,
+        "declaration": true,
+        "types": [
+            "webgl2"
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
